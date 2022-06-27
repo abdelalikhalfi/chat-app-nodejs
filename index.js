@@ -31,6 +31,6 @@ function broadcast(msg) {
     }
   }
 }
-server.listen(3000,()=>{
+server.listen(process.env.PORT || 8080,()=>{
   console.log(`server listening...`);
 })
